@@ -1,0 +1,564 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-container{
+    width: 90%;
+    margin: auto;
+
+}
+
+
+.lineaNav{
+    margin: 0;
+}
+
+/*Navigation -----------------------------------------------------------------------------------------*/
+
+
+.nav-main{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+}
+
+.nav-brand{
+    width: 50px;
+
+}
+
+.nav-main ul{
+    display: flex;
+}
+
+.nav-main ul li{
+    padding: 20px;
+}
+
+.nav-main ul li a{
+    padding: 2px;
+}
+
+.nav-main ul li a:hover{
+    border-bottom: 2px solid #000000;
+}
+
+.nav-main ul.nav-menu{
+    flex: 1;
+    margin: 0;
+}
+
+.boton-sesion{
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    width: 6rem;
+    height: 2.3rem;
+}
+
+/*Banner -----------------------------------------------------------------------------------------*/
+
+.bannerInicio{
+    background-color: rgb(47, 210, 255);
+    padding: 35px 0 35px 0;
+    box-shadow: 0 0 1rem 0 hsla(0, 0%, 0%, 0.25);
+}
+
+.bannerContainer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.iniciarSesion {
+    margin: 0;
+    padding: 0;
+}
+
+
+.texto{
+    width: 50%;
+    font-family: 'Handlee', cursive; 
+    padding-top: 5%;
+    padding-left: 40px;
+}
+
+.bannerContainer h3{
+    font-size: 25px;
+    
+}
+
+.bannerContainer h1{
+    font-size: 100px;
+}
+
+.bannerContainer h4{
+    font-size: 20px;
+}
+
+.imagenBannerInicio{
+    max-width: 80%;
+    margin: 0 5% 0 0;
+}
+
+/*About us -----------------------------------------------------------------------------------------*/
+
+.quienesSomosContainer{
+    display: grid;
+    place-items: center;
+    margin: auto;
+    padding: 40px;
+    width: 70%;
+}
+
+.quienesSomosContainer h2{
+    font-family: 'Handlee', cursive; 
+    font-size: 40px;
+}
+
+.quienesSomosParrafos{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    padding: 40px;
+}
+
+
+
+.quienesSomosParrafos p{
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+/*Contacto -----------------------------------------------------------------------------------------*/
+
+.contactoContainer{
+    display: grid;
+    place-items: center;
+    margin: auto;
+    padding: 40px;
+    width: 70%;
+}
+
+.contactoContainer h2{
+    font-family: 'Handlee', cursive; 
+    font-size: 40px;
+}
+
+.inscripcion-container {
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+  
+.inscripcion-container h3 {
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+  
+.form-group {
+    margin-bottom: 20px;
+}
+  
+label {
+    font-weight: bold;
+}
+  
+input[type="text"],
+input[type="email"],
+input[type="Asunto"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="Mensaje"]{
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/*Probando boludeces-----------------------------------------------------*/
+
+
+
+/* Niveles Educativos Index --------------------------------------------------------------- */
+
+.bannerNivelesEstudiantiles{
+    display: grid;
+    place-items: center;
+    margin: auto;
+    padding: 40px;
+    width: 70%;
+}
+
+.bannerNivelesEstudiantiles h2{
+    font-family: 'Handlee', cursive; 
+    font-size: 40px;
+    padding: 20px;
+}
+
+.grillaNiveles{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 3rem;
+}
+
+.grillaNiveles img{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    width:100%;
+    height:auto;
+}
+
+/* Niveles Educativos Pagina --------------------------------------------------------------- */
+
+.headerNiveles{
+    background-color: rgb(47, 210, 255);
+    height: 400px;
+    box-shadow: 0 0 1rem 0 hsla(0, 0%, 0%, 0.25);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.headerNiveles h1{
+    font-family: 'Handlee', cursive; 
+    font-size: 80px;
+}
+
+.nivelesEducativosPag{
+    display: grid;
+    margin: auto;
+    width: 70%;
+}
+
+.TituloNiveles{
+    margin: 20px 0 0 0;
+    font-family: 'Handlee', cursive; 
+    font-size: 40px;
+}
+
+.nivelesContainer{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    padding-bottom: 20px;
+}
+
+.nivelesContainer img{
+    width: 80%;
+}
+
+/* Formulario--------------------------------------------------------------- */
+
+.headerFormulario{
+    background-color: rgb(47, 210, 255);
+    height: 400px;
+    box-shadow: 0 0 1rem 0 hsla(0, 0%, 0%, 0.25);
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+}
+
+.headerFormulario h1{
+    font-family: 'Handlee', cursive; 
+    font-size: 80px;
+}
+
+.formularioContainer {
+    width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .formularioContainer h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+ .form-group label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+/* Noticias --------------------------------------------------------------- */
+
+.headerNoticias{
+    background-color: rgb(47, 210, 255);
+    height: 400px;
+    box-shadow: 0 0 1rem 0 hsla(0, 0%, 0%, 0.25);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerNoticias h1{
+    font-family: 'Handlee', cursive; 
+    font-size: 80px;
+}
+
+.news-cards{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;   
+    justify-content: center;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 30px auto;
+}
+
+.news-cards img{
+    width: 100%;
+    height: 180px;
+    box-shadow: 0 0 1rem 0 hsla(0, 0%, 0%, 0.25);
+    border-radius: 1rem;
+}
+
+
+input[type="LeerMas"] {
+    background-color: #007bff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    width: 100px;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+/* Bienestar Estudiantil --------------------------------------------------------------- */
+
+.headerBienestarEstudiantil{
+    background-color: rgb(47, 210, 255);
+    height: 400px;
+    box-shadow: 0 0 1rem 0 hsla(0, 0%, 0%, 0.25);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerBienestarEstudiantil h1{
+    font-family: 'Handlee', cursive; 
+    font-size: 80px;
+}
+
+
+.profesoresContainer h2{
+    padding-top: 20px;
+    display: grid;
+    justify-content: center;
+    font-family: 'Handlee', cursive; 
+    font-size: 50px;
+}
+
+.profesoresGrilla{
+    padding-top: 20px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.profesoresGrilla div{
+    margin: 40px auto 40px auto;
+}
+
+.profesoresGrilla img{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+}
+
+.profesoresGrilla h3{
+    font-family: 'Handlee', cursive; 
+    font-size: 30px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Trabaja con Nosotros --------------------------------------------------------------- */
+
+.headerTrabajaConNosotros{
+    background-color: rgb(47, 210, 255);
+    height: 400px;
+    box-shadow: 0 0 1rem 0 hsla(0, 0%, 0%, 0.25);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerTrabajaConNosotros h1{
+    font-family: 'Handlee', cursive; 
+    font-size: 80px;
+}
+
+.ofertas{
+    width: 70%;
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.ofertas h2{
+    font-size: 40px;
+}
+
+.ofertas h3{
+    font-size: 25px;
+}
+
+.formularioOfertas{
+    display: grid;
+    row-gap: 20px;
+    width: 70%;
+    margin-top: 20px;
+
+}
+
+.formularioHeader{
+    background-color: rgb(47, 210, 255);
+    padding: 10px;
+}
+
+.formularioContenido{
+    padding: 10px 10px 5px 10px;
+    background-color: #d9d9d9;
+}
+
+input[type="Aplicar"]{
+    margin-top: 10px;
+    background-color: #007bff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    width: 70px;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* FOOTER --------------------------------------------------------------- */
+
+.footer-links{
+    background-color: #2f3640;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 35px 0;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.footer-container ul{
+    margin: 0 auto;
+}
+
+.footer-container ul a{
+    color: #ffffff;
+}
+
+.seccionContacto{
+    color: aqua;
+    margin: 20px auto;
+}
+
+.seccionContacto h3{
+    color: #ffffff;
+}
+
+.footer-container ul li{
+    line-height: 2;
+}
+
+.footer-hr{
+    width: 60%;
+    margin: 20px 0 0 20%;
+    border: 1px inset #2f3640;
+}
+
+.footer-devs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 25%;
+    color: #6a6a6a;
+}
+
+
