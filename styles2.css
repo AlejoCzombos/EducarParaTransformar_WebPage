@@ -35,6 +35,7 @@ ul{
 /*Navigation -----------------------------------------------------------------------------------------*/
 
 
+
 .nav-main{
     font-size: 17px;
     display: flex;
@@ -81,6 +82,7 @@ ul{
 
 .bannerInicio{
     background-color: rgb(47, 210, 255);
+    width: 100%;
     padding: 35px 0 35px 0;
     box-shadow: 0 0 1rem 0 hsla(0, 0%, 0%, 0.25);
 }
@@ -88,6 +90,7 @@ ul{
 .bannerContainer{
     display: flex;
     justify-content: space-between;
+    width: 100%;
     
 }
 
@@ -98,7 +101,7 @@ ul{
 
 
 .texto{
-    width: 50%;
+    width: 100%;
     font-family: 'Handlee', cursive; 
     padding-top: 5%;
     padding-left: 40px;
@@ -122,17 +125,20 @@ ul{
     margin: 0 5% 0 0;
 }
 
+
 /*About us -----------------------------------------------------------------------------------------*/
 
 .quienesSomosContainer{
     display: grid;
-    place-items: center;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     padding: 40px;
     width: 70%;
 }
 
 .quienesSomosContainer h2{
+    text-align: center;
     font-family: 'Handlee', cursive; 
     font-size: 40px;
 }
@@ -140,15 +146,19 @@ ul{
 .quienesSomosParrafos{
     display: grid;
     grid-template-columns: 35% 65%;
+    column-gap: 20px;
     padding: 40px;
 }
 
-
+.quienesSomosParrafos img{
+    width:100%;
+}
 
 .quienesSomosParrafos p{
     padding-top: 30px;
     font-size: 20px;
 }
+
 
 /*Contacto -----------------------------------------------------------------------------------------*/
 
@@ -261,6 +271,7 @@ input[type="submit"]:hover {
     display: grid;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
 }
 
@@ -282,6 +293,7 @@ input[type="submit"]:hover {
 }
 
 .nivelesContainer{
+    font-size: 20px;
     display: grid;
     place-items: center;
     grid-template-columns: 50% 50%;
@@ -293,6 +305,7 @@ input[type="submit"]:hover {
     width: 80%;
 }
 
+
 /* Formulario--------------------------------------------------------------- */
 
 .headerFormulario{
@@ -302,6 +315,7 @@ input[type="submit"]:hover {
     display: grid;
     justify-content: center;
     align-items: center; 
+    text-align: center;
 }
 
 .headerFormulario h1{
@@ -361,6 +375,7 @@ input[type="submit"]:hover {
     display: grid;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .headerNoticias h1{
@@ -369,9 +384,9 @@ input[type="submit"]:hover {
 }
 
 .news-cards{
+    text-align: justify;
     width: 70%;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;   
+    display: grid;  
     justify-content: center;
     gap: 40px;
     grid-template-columns: repeat(4, 1fr);
@@ -379,8 +394,10 @@ input[type="submit"]:hover {
 }
 
 .news-cards img{
-    width: 100%;
-    height: 180px;
+    display: grid;
+    margin: auto;
+    max-width: 100%;
+    height: 200px;
     box-shadow: 0 0 1rem 0 hsla(0, 0%, 0%, 0.25);
     border-radius: 1rem;
 }
@@ -407,6 +424,7 @@ input[type="LeerMas"] {
     display: grid;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .headerBienestarEstudiantil h1{
@@ -435,6 +453,7 @@ input[type="LeerMas"] {
 }
 
 .profesoresGrilla img{
+    width: 100%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     border-radius: 100%;
 }
@@ -446,7 +465,33 @@ input[type="LeerMas"] {
     text-align: center;
 }
 
+#carouselExampleIndicators{
+    width: 70%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+#carouselExampleIndicators h2{
+    padding-top: 20px;
+    display: grid;
+    justify-content: center;
+    font-family: 'Handlee', cursive; 
+    font-size: 50px;
+    text-align: center;
+}
+
+.carousel-inner{
+    box-shadow: 0 0 1rem 0 hsla(0, 0%, 0%, 0.5);
+    border-radius: 5%;
+}
+
+.carousel-item img{
+    width: 100%;
+}
+
 /* Trabaja con Nosotros --------------------------------------------------------------- */
+
+
 
 .headerTrabajaConNosotros{
     background-color: rgb(47, 210, 255);
@@ -455,6 +500,7 @@ input[type="LeerMas"] {
     display: grid;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .headerTrabajaConNosotros h1{
@@ -510,6 +556,10 @@ input[type="Aplicar"]{
     cursor: pointer;
 }
 
+input[type="Aplicar"]:hover {
+    background-color: #0056b3;
+}
+
 /* FOOTER --------------------------------------------------------------- */
 
 .footer-links{
@@ -561,4 +611,106 @@ input[type="Aplicar"]{
     color: #6a6a6a;
 }
 
+/* Resizable --------------------------------------------------------------- */
 
+@media (max-width: 1300px) {
+    
+    .imagenBannerInicio{
+        max-width: 40%;
+        max-height: 40%;
+    }
+    
+    .quienesSomosParrafos img{
+        margin: auto;
+    }
+
+    .nivelesContainer{
+        font-size: 15px;
+    }
+
+    .profesoresGrilla div{
+       max-width: 70%;
+    }
+
+    .ofertasHeader{
+        text-align: center;
+    }
+
+    .formularioOfertas{
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+}
+
+@media (max-width: 1142px) {
+    .nav-main ul li{
+        padding: 10px;
+    }
+
+    .news-cards{
+        grid-template-columns: repeat(3, 1fr);
+        margin: 30px auto;
+    }
+}
+
+@media (max-width: 1000px){
+
+    .nav-main{
+        font-size: 15px;
+    }
+
+    .bannerInicio{
+        padding: 0;
+    }
+
+    .imagenBannerInicio{
+        margin: auto;
+        padding-right: 10px;
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .nivelesContainer{
+        grid-template-columns: 100%;
+        font-size: 20px;
+    }
+
+    
+
+}
+
+@media (max-width: 960px){
+    .imagenBannerInicio{
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 917px){
+
+    .nav-brand{
+        width: 5%;
+    }
+
+    .nav-main ul li{
+        padding: 7px;
+    }
+
+    .quienesSomosParrafos{
+        grid-template-columns: 100%;
+    }
+}
+
+
+
+@media (max-width: 857px){
+    .nav-main ul li{
+        padding: 3px;
+    }
+
+    .news-cards{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px auto;
+    }
+}
