@@ -1,3 +1,8 @@
+:root{
+    --tipografiaPrincipal: 'Oswald', sans-serif;
+    --tipografiaSecundaria: 'Nunito', sans-serif;
+    --colorPrimario: rgb(47, 210, 255);
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,9 +12,8 @@
 body{
     background-color: #ffffff;
     color: #000000;
-    font-size: 16px;
-    font-family: 'Oswald', sans-serif;
-
+    font-size: 18px;
+    font-family: var(--tipografiaSecundaria);
 }
 
 a{
@@ -24,7 +28,7 @@ ul{
 .nav-container{
     width: 90%;
     margin: auto;
-
+    font-family: var(--tipografiaPrincipal);
 }
 
 
@@ -34,6 +38,9 @@ ul{
 
 /*Navigation -----------------------------------------------------------------------------------------*/
 
+.formulario{
+    background-color: var(--colorPrimario);
+}
 
 
 .nav-main{
@@ -72,7 +79,6 @@ ul{
 }
 
 .boton-sesion{
-    font-family: 'Oswald', sans-serif;
     font-size: 17px;
     width: 6rem;
     height: 2.3rem;
@@ -81,7 +87,7 @@ ul{
 /*Banner -----------------------------------------------------------------------------------------*/
 
 .bannerInicio{
-    background-color: rgb(47, 210, 255);
+    background-color: var(--colorPrimario);
     width: 100%;
     padding: 35px 0 35px 0;
     box-shadow: 0 0 1rem 0 hsla(0, 0%, 0%, 0.25);
@@ -192,10 +198,7 @@ ul{
 .form-group {
     margin-bottom: 20px;
 }
-  
-label {
-    font-weight: bold;
-}
+
   
 input[type="text"],
 input[type="email"],
@@ -229,7 +232,6 @@ input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-/*Probando boludeces-----------------------------------------------------*/
 
 
 
@@ -340,7 +342,7 @@ input[type="submit"]:hover {
   }
   
  .form-group label {
-    font-weight: bold;
+    font-weight: normal;
   }
   
   input[type="text"],
@@ -384,12 +386,11 @@ input[type="submit"]:hover {
 }
 
 .news-cards{
-    text-align: justify;
     width: 70%;
     display: grid;  
     justify-content: center;
     gap: 40px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     margin: 30px auto;
 }
 
@@ -402,6 +403,10 @@ input[type="submit"]:hover {
     border-radius: 1rem;
 }
 
+.noticia p,.noticia h3,.noticia div {
+    padding-right: 15px;
+    padding-left: 15px;
+}
 
 input[type="LeerMas"] {
     background-color: #007bff;
@@ -567,6 +572,8 @@ input[type="Aplicar"]:hover {
     color: #ffffff;
     font-size: 12px;
     padding: 35px 0;
+
+    margin-top: 4rem;
 }
 
 .footer-container{

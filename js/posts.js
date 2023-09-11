@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const postsContainer = document.getElementById('posts-container');
     const newPostContainer = document.getElementById('new_post_container');
+    const footer = document.getElementById('footer');
     const postURL = `${URL_API}/api/posts`;
     
     loadPosts();
@@ -33,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 addComment();
                 createNewPost();
                 newPostContainer.style.display = 'block';
+                footer.style.display = 'block';
             })
             
     }
@@ -48,6 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const newPostContent = document.getElementById('commentText-new_post').value;
             const newPostTitule = document.getElementById('tituleText-new_post').value;
+            document.getElementById('commentText-new_post').value = '';
+            document.getElementById('tituleText-new_post').value = '';
 
             if(localStorage.getItem("jwtToken") === '' || localStorage.getItem("id") === ''){
                 PostErrorMessage("Inicie sesión para dejar un comentario");
@@ -89,16 +93,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
         commentButtons.forEach(button => {
             button.addEventListener('click', event => {
+                
+                const postId = button.id.split('-')[1];
+                const userId = localStorage.getItem('id');
+                const commentText = document.getElementById(`commentText-${postId}`).value;
 
                 if(localStorage.getItem("jwtToken") === '' || localStorage.getItem("id") === ''){
                     errorMessage(button.id.split('-')[1], "Inicie sesión para dejar un comentario");
                     return;
                 }
+                
+                if(commentText == ''){
+                    return;
+                }
 
-                const postId = button.id.split('-')[1];
-                const userId = localStorage.getItem('id');
-
-                const commentText = document.getElementById(`commentText-${postId}`).value;
+                
                 document.getElementById(`commentText-${postId}`).value = '';
                 
                 fetch(`${URL_API}/api/comments/${postId}/${userId}`, {
