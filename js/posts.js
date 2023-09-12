@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="d-flex flex-row align-items-center text-left comment-top pb-3 border-bottom px-4" >
                         <div class="d-flex flex-column ml-3">
                             <div class="d-flex flex-row post-title"> <!--Titulo y Autor -->
-                                <h5>${post.titule}</h5>
+                                <h4>${post.titule}</h4>
                                 <span class="ms-4 text-rigth">(${post.firstname} ${post.lastname})</span>
                             </div>
                             <div class="comment-text-sm pb-2"><span>${post.content}</span></div>

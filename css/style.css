@@ -13,40 +13,50 @@ body{
 
 .Padre{
   background-color: orange;
-  height: 21px;
+  height: 25px;
   color: #fff;
-  font-size: 11px;
-  padding: 8px;
+  font-size: 13px;
+  padding: 10px;
   border-radius: 4px;
   line-height: 3px;
 }
 
 .Estudiante{
-  background-color:darkgreen;
-  height: 21px;
+  background-color:rgb(3, 190, 3);
+  height: 25px;
   color: #fff;
-  font-size: 11px;
-  padding: 8px;
+  font-size: 13px;
+  padding: 10px;
   border-radius: 4px;
   line-height: 3px;
 }
 
 .Docente{
   background-color: deepskyblue;
-  height: 21px;
+  height: 25px;
   color: #fff;
-  font-size: 11px;
-  padding: 8px;
+  font-size: 13px;
+  padding: 10px;
   border-radius: 4px;
   line-height: 3px;
 }
 
 .Admin{
   background-color: crimson;
-  height: 21px;
+  height: 25px;
   color: #fff;
-  font-size: 11px;
-  padding: 8px;
+  font-size: 13px;
+  padding: 10px;
+  border-radius: 4px;
+  line-height: 3px;
+}
+
+.Invitado{
+  background-color:blueviolet;
+  height: 25px;
+  color: #fff;
+  font-size: 13px;
+  padding: 10px;
   border-radius: 4px;
   line-height: 3px;
 }

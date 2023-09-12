@@ -32,6 +32,10 @@ h3 {
     font-size: 2rem;
     font-weight: 600;
 }
+h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
 
 body{
     background-color: #ffffff;
@@ -65,7 +69,6 @@ ul{
 .formulario{
     background-color: var(--colorPrimario);
 }
-
 
 .nav-main{
     font-size: 17px;
@@ -351,7 +354,6 @@ input[type="submit"]:hover {
 .headerFormulario{
     background-color: rgb(47, 210, 255);
     height: 400px;
-    box-shadow: 0 0 1rem 0 hsla(0, 0%, 0%, 0.25);
     display: grid;
     justify-content: center;
     align-items: center; 
@@ -380,7 +382,6 @@ input[type="submit"]:hover {
     margin: 20px auto;
     padding: 20px;
     background-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
   }
   
   .formularioContainer h2 {
@@ -420,42 +421,25 @@ input[type="submit"]:hover {
 
 /* Noticias --------------------------------------------------------------- */
 
-.headerNoticias{
-    background-color: rgb(47, 210, 255);
-    height: 400px;
-    box-shadow: 0 0 1rem 0 hsla(0, 0%, 0%, 0.25);
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.headerNoticias h1{
-    font-family: 'Handlee', cursive; 
-    font-size: 80px;
-}
 
 .news-cards{
-    width: 70%;
+    width: 80%;
     display: grid;  
     justify-content: center;
-    gap: 40px;
+    gap: 4rem;
     grid-template-columns: repeat(3, 2fr);
     margin: 30px auto;
 }
 
-.news-cards img{
-    display: grid;
-    margin: auto;
-    max-width: 100%;
-    height: 200px;
-    box-shadow: 0 0 1rem 0 hsla(0, 0%, 0%, 0.25);
-    border-radius: 1rem;
+.noticiasNovedades h2{
+    text-align: center;
+    padding: 3rem;
 }
 
-.noticia p,.noticia h3,.noticia div {
-    padding-right: 15px;
-    padding-left: 15px;
+.news-cards img{
+    display: grid;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
 }
 
 input[type="LeerMas"] {
@@ -475,32 +459,38 @@ input[type="LeerMas"] {
 .headerBienestarEstudiantil{
     background-color: rgb(47, 210, 255);
     height: 400px;
-    box-shadow: 0 0 1rem 0 hsla(0, 0%, 0%, 0.25);
     display: grid;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.headerBienestarEstudiantil h1{
-    font-family: 'Handlee', cursive; 
-    font-size: 80px;
-}
-
-
 .profesoresContainer h2{
-    padding-top: 20px;
-    display: grid;
-    justify-content: center;
-    font-family: 'Handlee', cursive; 
-    font-size: 50px;
+    text-align: center;
+    margin-top: 2rem;
 }
 
-.profesoresGrilla{
-    padding-top: 20px;
+.carousel h2{
+    text-align: center;
+    padding: 2rem;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .profesoresGrilla{
+    padding: 2rem 0;
     display: grid;
     justify-content: center;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin: 0 2rem;
+    }
+    .profesor {
+        text-align: center;
+    }
+    .profesor h3{
+        margin-top: 1rem;
+    }
 }
 
 .profesoresGrilla div{
@@ -509,35 +499,13 @@ input[type="LeerMas"] {
 
 .profesoresGrilla img{
     width: 100%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     border-radius: 100%;
-}
-
-.profesoresGrilla h3{
-    font-family: 'Handlee', cursive; 
-    font-size: 30px;
-    padding-top: 20px;
-    text-align: center;
 }
 
 #carouselExampleIndicators{
     width: 70%;
     margin: auto;
     padding-bottom: 50px;
-}
-
-#carouselExampleIndicators h2{
-    padding-top: 20px;
-    display: grid;
-    justify-content: center;
-    font-family: 'Handlee', cursive; 
-    font-size: 50px;
-    text-align: center;
-}
-
-.carousel-inner{
-    box-shadow: 0 0 1rem 0 hsla(0, 0%, 0%, 0.5);
-    border-radius: 5%;
 }
 
 .carousel-item img{
@@ -551,16 +519,10 @@ input[type="LeerMas"] {
 .headerTrabajaConNosotros{
     background-color: rgb(47, 210, 255);
     height: 400px;
-    box-shadow: 0 0 1rem 0 hsla(0, 0%, 0%, 0.25);
     display: grid;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
-
-.headerTrabajaConNosotros h1{
-    font-family: 'Handlee', cursive; 
-    font-size: 80px;
 }
 
 .ofertas{
@@ -570,14 +532,6 @@ input[type="LeerMas"] {
     margin: auto;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-.ofertas h2{
-    font-size: 40px;
-}
-
-.ofertas h3{
-    font-size: 25px;
 }
 
 .formularioOfertas{
@@ -665,6 +619,20 @@ input[type="Aplicar"]:hover {
     padding: 10px 25%;
     color: #6a6a6a;
 }
+
+/* Comentarios --------------------------------------------------------------------*/
+
+
+.comentarioh2{
+    text-align: center;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.comentariosContenedor {
+    padding: 3rem;
+}
+
 
 /* Resizable --------------------------------------------------------------- */
 
