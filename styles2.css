@@ -505,12 +505,17 @@ input[type="LeerMas"] {
 #carouselExampleIndicators{
     width: 70%;
     margin: auto;
-    padding-bottom: 50px;
 }
 
 .carousel-item img{
     width: 100%;
 }
+
+.Slider{
+    background-color: var(--colorPrimario);
+    
+}
+
 
 /* Trabaja con Nosotros --------------------------------------------------------------- */
 
