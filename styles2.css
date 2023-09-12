@@ -296,29 +296,16 @@ input[type="submit"]:hover {
 .headerNiveles{
     background-color: rgb(47, 210, 255);
     height: 400px;
-    box-shadow: 0 0 1rem 0 hsla(0, 0%, 0%, 0.25);
     display: grid;
     justify-content: center;
     align-items: center;
     text-align: center;
-
-}
-
-.headerNiveles h1{
-    font-family: 'Handlee', cursive; 
-    font-size: 80px;
 }
 
 .nivelesEducativosPag{
     display: grid;
     margin: auto;
     width: 70%;
-}
-
-.TituloNiveles{
-    margin: 20px 0 0 0;
-    font-family: 'Handlee', cursive; 
-    font-size: 40px;
 }
 
 .nivelesContainer{
@@ -648,11 +635,7 @@ input[type="Aplicar"]:hover {
 /* Resizable --------------------------------------------------------------- */
 
 @media (max-width: 1300px) {
-    
-    .imagenBannerInicio{
-        max-width: 40%;
-        max-height: 40%;
-    }
+
     
     .quienesSomosParrafos img{
         margin: auto;
