@@ -162,7 +162,7 @@ ul{
 
 .quienesSomosContainer{
     width: 80%;
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 @media (min-width: 768px) {
@@ -518,7 +518,7 @@ input[type="LeerMas"] {
 
 .Slider{
     background-color: var(--colorPrimario);
-    
+    padding-bottom: 5rem;
 }
 
 

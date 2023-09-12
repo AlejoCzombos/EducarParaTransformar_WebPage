@@ -27,7 +27,7 @@
     
     <div class="nav-container">
         <nav class="nav-main">
-            <img src="img/logo.png" alt="Centro LOGO" class="nav-brand">
+            <a href="index.html"><img src="img/logo.png" alt="Centro LOGO" class="nav-brand"></a>
             <ul class="nav-menu">
                 <li>
                     <a href="index.html">Inicio</a>
@@ -72,7 +72,7 @@
 
     <!--About us --------------------------------------------------------------------------------->
 
-    <div class="quienesSomosContainer contenedor pt-5">
+    <div class="quienesSomosContainer contenedor">
         <div>
             <img src="img/Inicio.jpg" alt="">
         </div>
@@ -94,17 +94,20 @@
             <h2 class="pb-4">Niveles estudiantiles</h2>
             <div class="grillaNiveles">
                 <div class="nivel">
+                    <a href="nivelesEducativos.html">
                     <img src="img/Jardin.jpg" alt="">
-                    <h3>Nivel Inicial</h3>
+                    <h3>Nivel Inicial</h3></a>
                 </div>
                 <div class="nivel">
+                    <a href="nivelesEducativos.html">
                     <img src="img/Primaria.jpg" alt="">
-                    <h3>Nivel Primario</h3>
+                    <h3>Nivel Primario</h3></a>
                     
                 </div>
                 <div class="nivel">
+                    <a href="nivelesEducativos.html">
                     <img src="img/Secundaria.jpg" alt="">
-                    <h3>Nivel Secundario</h3> 
+                    <h3>Nivel Secundario</h3> </a>
                 </div>
             </div>
         </div>
@@ -125,7 +128,7 @@
         <h3>Contacto</h3>
         <div class="formularioContainer">
             <h2>Formulario de Contacto</h2>
-            <form action="#" method="post">
+            <form action="#">
               <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -139,13 +142,8 @@
                 <input type="number" inputmode="numeric" id="nombre" name="numeric" required>
               </div>
               <div class="form-group">
-                <label for="curso">Curso de Interés:</label>
-                <select id="curso" name="curso" required>
-                    <option selected disabled value="">Seleccionar</option>
-                    <option value="Jardin">Jardin de Infantes</option>
-                    <option value="Educacion">Educacion Primaria</option>
-                    <option value="Educacion">Educacion Secundaria</option>
-                </select>
+                <label for="Mensaje">Mensaje:</label>
+                <input type="Mensaje" id="Mensaje" name="Mensaje" required>
               </div>
               <div class="form-group">
                 <input type="submit" value="Enviar">
@@ -156,6 +154,7 @@
     
 
     <!--Footer----------------------------------------------------------------------------------------------->
+
 
     <div class="footer-links">
         <div class="footer-container">
@@ -184,17 +183,16 @@
                     <a href="#"> <i class="fab fa-facebook-f " ></i> Facebook</a>
                 </li>
                 <li>
-                    <a target="_blank" href="https://wa.me/5493624595235/?text=Probando%20el%20boton"> <i class="fab fa-whatsapp " ></i> WhatsApp</a>
+                    <a target="_blank"> <i class="fab fa-whatsapp" ></i> WhatsApp</a>
                 </li><li>
                     <a href="#"> <i class="fab fa-instagram " ></i> Instagram</a>
                 </li>
-                
             </ul>
         </div>
         <hr class="footer-hr">
         <div class="footer-devs">
             <p>Team Ozono</p>
-            <p> <i class="fa-regular fa-copyright"></i> Educar para Transformar 2001-2023| Todos los derechos Reservados.</p>
+            <p> <i class="fa-regular fa-copyright"></i> Educar para Transformar 2001-2023 | Todos los derechos Reservados.</p>
         </div>
     </div>
 
