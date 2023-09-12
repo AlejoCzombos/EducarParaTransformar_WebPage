@@ -104,6 +104,8 @@ ul{
     height: 2.3rem;
 }
 
+
+
 /*Banner -----------------------------------------------------------------------------------------*/
 
 .bannerInicio{
@@ -361,6 +363,18 @@ input[type="submit"]:hover {
     font-size: 80px;
 }
 
+.fondoFormulario{
+    background-color: rgb(47, 210, 255);
+    padding: 20px 0;
+}
+
+.fondoFormulario h3{
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+    font-size: 3rem;
+}
+
 .formularioContainer {
     width: 800px;
     margin: 20px auto;
@@ -608,8 +622,6 @@ input[type="Aplicar"]:hover {
     color: #ffffff;
     font-size: 12px;
     padding: 35px 0;
-
-    margin-top: 4rem;
 }
 
 .footer-container{
@@ -656,6 +668,12 @@ input[type="Aplicar"]:hover {
 
 /* Resizable --------------------------------------------------------------- */
 
+@media (max-width: 1376px){
+    .nav-main{
+        text-align: center;
+    }
+}
+
 @media (max-width: 1300px) {
 
     
@@ -688,52 +706,34 @@ input[type="Aplicar"]:hover {
         padding: 10px;
     }
 
-    .news-cards{
-        grid-template-columns: repeat(3, 1fr);
-        margin: 30px auto;
-    }
+    
 }
 
 @media (max-width: 1000px){
 
     .nav-main{
         font-size: 15px;
-    }
-
-    .bannerInicio{
-        padding: 0;
-    }
-
-    .imagenBannerInicio{
-        margin: auto;
-        padding-right: 10px;
-        max-width: 300px;
-        max-height: 300px;
-    }
+    } 
 
     .nivelesContainer{
         grid-template-columns: 100%;
         font-size: 20px;
-    }
-
-    
-
-}
-
-@media (max-width: 960px){
-    .imagenBannerInicio{
-        visibility: hidden;
     }
 }
 
 @media (max-width: 917px){
 
     .nav-brand{
-        width: 5%;
+        width: 10%;
     }
 
     .nav-main ul li{
         padding: 7px;
+    }
+    
+    .news-cards{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px auto;
     }
 
     .quienesSomosParrafos{
@@ -748,8 +748,5 @@ input[type="Aplicar"]:hover {
         padding: 3px;
     }
 
-    .news-cards{
-        grid-template-columns: repeat(2, 1fr);
-        margin: 30px auto;
-    }
+    
 }
