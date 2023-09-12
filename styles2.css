@@ -81,7 +81,6 @@ ul{
 
 .nav-brand{
     width: 5rem;
-
 }
 
 .nav-main ul{
@@ -103,8 +102,6 @@ ul{
 
 .boton-sesion{
     font-size: 17px;
-    width: 6rem;
-    height: 2.3rem;
 }
 
 
@@ -180,6 +177,10 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.nivelesEducativos h2{
+    padding: 1rem 0;
 }
 
 
@@ -388,10 +389,6 @@ input[type="submit"]:hover {
     text-align: center;
   }
   
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
  .form-group label {
     font-weight: normal;
   }
@@ -520,59 +517,34 @@ input[type="LeerMas"] {
 /* Trabaja con Nosotros --------------------------------------------------------------- */
 
 
-
-.headerTrabajaConNosotros{
-    background-color: rgb(47, 210, 255);
-    height: 400px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 .ofertas{
     width: 70%;
     display: grid;
-    justify-content: center;
-    margin: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    align-items: center;
 }
 
-.formularioOfertas{
-    display: grid;
-    row-gap: 20px;
-    width: 70%;
-    margin-top: 20px;
-
+.ofertasHeader h2{
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
 }
 
+.formularioOfertaCompleto{
+    background-color: white;
+    margin: 2rem;
+}
 .formularioHeader{
-    background-color: rgb(47, 210, 255);
-    padding: 10px;
+    padding: 2rem;
+}
+
+.botonOferta{
+    margin-top: 1rem;
 }
 
 .formularioContenido{
-    padding: 10px 10px 5px 10px;
-    background-color: #d9d9d9;
+    padding: 0.5rem 2rem;
 }
 
-input[type="Aplicar"]{
-    margin-top: 10px;
-    background-color: #007bff;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    width: 70px;
-    color: #fff;
-    padding: 10px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type="Aplicar"]:hover {
-    background-color: #0056b3;
-}
 
 /* FOOTER --------------------------------------------------------------- */
 
@@ -640,6 +612,13 @@ input[type="Aplicar"]:hover {
 }
 
 
+/* Login --------------------------------------------------------------------*/
+
+
+.loginContenedor{
+    padding: 5rem 0;
+}
+
 /* Resizable --------------------------------------------------------------- */
 
 @media (max-width: 1376px){
@@ -661,16 +640,6 @@ input[type="Aplicar"]:hover {
 
     .profesoresGrilla div{
        max-width: 70%;
-    }
-
-    .ofertasHeader{
-        text-align: center;
-    }
-
-    .formularioOfertas{
-        justify-content: center;
-        align-items: center;
-        margin: auto;
     }
 
 }
