@@ -124,6 +124,7 @@ ul{
     filter: blur(1px);
 }
 
+
 .bannerContainer{
     margin-left: 2rem;
     display: flex;
@@ -158,11 +159,16 @@ ul{
 /*About us -----------------------------------------------------------------------------------------*/
 
 .quienesSomosContainer{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     width: 80%;
-    gap: 5rem;
     padding: 5rem 0;
+}
+
+@media (min-width: 768px) {
+    .quienesSomosContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
 }
 
 .quienesSomosParrafos{
@@ -260,25 +266,42 @@ input[type="submit"]:hover {
     background-color: white;
 }
 
-.grillaNiveles{
-    display: grid;
-    place-content: center;
-    grid-template-columns: 33% 33% 33%;
-    column-gap: 3rem;
+.nivel {
+    padding: 1rem 0;
 }
+
+@media (min-width: 768px) {
+    .grillaNiveles{
+        display: grid;
+        place-content: center;
+        grid-template-columns: 33% 33% 33%;
+        column-gap: 3rem;
+    }
+    .nivel {
+        padding: 0;
+    }
+}
+
+
 
 
 /* Contactanos -------------------------------------------------------------------------------*/
 
+@media (min-width: 768px) {
+    .contactoContenedor{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+        gap: 5rem;
+        padding: 3rem 0;
+        height: 22rem;
+    }
+}
 
 .contactoContenedor{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 80%;
-    gap: 5rem;
-    padding: 3rem 0;
-    height: 22rem;
+    text-align: center;
 }
+
 
 .contactoTexto{
     display: flex;
@@ -293,34 +316,33 @@ input[type="submit"]:hover {
 
 /* Niveles Educativos Pagina --------------------------------------------------------------- */
 
-.headerNiveles{
-    background-color: rgb(47, 210, 255);
-    height: 400px;
-    display: grid;
-    justify-content: center;
+.bannerContenido{
+    margin-left: 2rem;
+    display: flex;
     align-items: center;
-    text-align: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
 }
 
-.nivelesEducativosPag{
-    display: grid;
-    margin: auto;
-    width: 70%;
+.bannerContenido h1{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 700;
 }
 
-.nivelesContainer{
-    font-size: 20px;
-    display: grid;
-    place-items: center;
-    grid-template-columns: 50% 50%;
-    column-gap: 10px;
-    padding-bottom: 20px;
+.bannerResto{
+    max-height: 30rem;
 }
 
-.nivelesContainer img{
-    width: 80%;
+.imagenBannerOtros {
+    display: block;
+    width: 100%;
+    filter: blur(2.5px);
 }
-
 
 /* Formulario--------------------------------------------------------------- */
 
