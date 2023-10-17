@@ -1,12 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
     const botonSesion = document.getElementById('boton-sesion');
     const usuarioLogueado = obtenerEstadoDeSesion();
+    const descargaContainer = document.getElementById('descarga-container');
 
     if (usuarioLogueado) {
         botonSesion.textContent = 'Cerrar Sesión';
+        descargaContainer.style.display = 'block';
         botonSesion.href = '#';
     } else {
         botonSesion.textContent = 'Iniciar Sesión';
+        descargaContainer.style.display = 'none';
         botonSesion.href = 'login.html';
     }
 
